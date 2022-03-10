@@ -12,11 +12,7 @@ namespace ReaderWriter
 	{
 		private NetworkStream stream;
 		
-		public TCP(NetworkStream stream)
-		{
-			this.stream = stream;
-			
-		}
+		public TCP(NetworkStream stream) => this.stream = stream;
 
 		public void Write(byte[] message)
 		{
