@@ -10,10 +10,10 @@ namespace TestClient
 		static void Main(string[] args)
 		{
 			TcpClient client = new TcpClient("127.0.0.1", 8888);
-			ReadWrite tcp = new ReadWrite(client.GetStream());
-			byte[] data = tcp.Read();
+			TCP tcp = new TCP(client);
+			byte[] data = tcp.ReadData();
 			Console.WriteLine(Encoding.ASCII.GetString(data));
-			tcp.Write(Encoding.ASCII.GetBytes("Hello from client!"));
+			tcp.WriteData(Encoding.ASCII.GetBytes("Hello from client!"));
 		}
 	}
 }

@@ -21,15 +21,12 @@ namespace TestServer
 			listener.Start();
 			while(true)
 			{
-				TcpClient client = listener.AcceptTcpClient();
-				ReadWrite tcp = new ReadWrite(client.GetStream());
-
-				tcp.Write(Encoding.ASCII.GetBytes("Hello world!"));
-				byte[] data = tcp.Read();
+				TCP tcp = new TCP(listener.AcceptTcpClient());
+			
+				tcp.WriteData(Encoding.ASCII.GetBytes("Hello world!"));
+				byte[] data = tcp.ReadData();
 				Console.WriteLine(Encoding.ASCII.GetString(data));
 				tcp.Dispose();
-				client.Close();
-				client.Dispose();
 			}
 		}
 	}

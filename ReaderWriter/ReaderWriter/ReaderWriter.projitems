@@ -9,7 +9,9 @@
     <Import_RootNamespace>ReaderWriter</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ReadWrite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TCP.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UDP.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)util\MessageWrapper.cs" />
   </ItemGroup>
 </Project>
