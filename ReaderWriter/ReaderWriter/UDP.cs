@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ReaderWriter.util;
+using System;
 using System.Collections.Generic;
 using System.Net.Sockets;
 using System.Text;
@@ -25,7 +26,8 @@ namespace ReaderWriter
 
 		public void WriteData(byte[] data)
 		{
-
+			byte[] toSend = MessageWrapper.WrapMessage(data);
+			client.Send(toSend, toSend.Length);
 		}
 
 		public byte[] ReadData() {
