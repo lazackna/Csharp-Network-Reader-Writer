@@ -8,11 +8,11 @@ using System.Diagnostics;
 using ReaderWriter.util;
 namespace ReaderWriter
 {
-	public class TCP : IDisposable
+	public class ReadWrite : IDisposable
 	{
 		private NetworkStream stream;
 		
-		public TCP(NetworkStream stream) => this.stream = stream;
+		public ReadWrite(NetworkStream stream) => this.stream = stream;
 
 		public void Write(byte[] message)
 		{

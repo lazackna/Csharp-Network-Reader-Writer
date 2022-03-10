@@ -22,7 +22,7 @@ namespace TestServer
 			while(true)
 			{
 				TcpClient client = listener.AcceptTcpClient();
-				TCP tcp = new TCP(client.GetStream());
+				ReadWrite tcp = new ReadWrite(client.GetStream());
 
 				tcp.Write(Encoding.ASCII.GetBytes("Hello world!"));
 				byte[] data = tcp.Read();
