@@ -5,6 +5,8 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <Import Project="..\ReaderWriter\ReaderWriter.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\NetworkIO\NetworkIO.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -1,10 +1,10 @@
-﻿using ReaderWriter;
+﻿
 using System;
 using System.Net;
-using System.Net.Sockets;
-using ReaderWriter;
+
 using System.Text;
-using ReaderWriter.UDP;
+
+using Lazackna.NetworkIO.UDP;
 
 namespace TestServer
 {

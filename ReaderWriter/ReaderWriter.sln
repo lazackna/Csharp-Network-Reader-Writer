@@ -1,20 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31911.196
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32630.193
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ReaderWriter", "ReaderWriter\ReaderWriter.shproj", "{F42B7992-7505-4923-BF85-8FEBC679CFC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestClient", "TestClient\TestClient.csproj", "{AC461668-786E-4F28-A37A-3DF109E5647E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{AC461668-786E-4F28-A37A-3DF109E5647E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServer", "TestServer\TestServer.csproj", "{4B0D3EDC-6C9D-4B2C-AC6D-061FDB32223A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServer", "TestServer\TestServer.csproj", "{4B0D3EDC-6C9D-4B2C-AC6D-061FDB32223A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkIO", "NetworkIO\NetworkIO.csproj", "{85B9194C-5B06-44D8-A41F-79303872694F}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ReaderWriter\ReaderWriter.projitems*{4b0d3edc-6c9d-4b2c-ac6d-061fdb32223a}*SharedItemsImports = 5
-		ReaderWriter\ReaderWriter.projitems*{ac461668-786e-4f28-a37a-3df109e5647e}*SharedItemsImports = 5
-		ReaderWriter\ReaderWriter.projitems*{f42b7992-7505-4923-bf85-8febc679cfc7}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -28,6 +23,10 @@ Global
 		{4B0D3EDC-6C9D-4B2C-AC6D-061FDB32223A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B0D3EDC-6C9D-4B2C-AC6D-061FDB32223A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B0D3EDC-6C9D-4B2C-AC6D-061FDB32223A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B9194C-5B06-44D8-A41F-79303872694F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B9194C-5B06-44D8-A41F-79303872694F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B9194C-5B06-44D8-A41F-79303872694F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B9194C-5B06-44D8-A41F-79303872694F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
